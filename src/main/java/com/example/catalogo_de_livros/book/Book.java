@@ -16,7 +16,6 @@ public class Book {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String title;
-    private String description;
     private String author;
     private String image;
     private Integer price;
@@ -25,7 +24,6 @@ public class Book {
         this.image = data.image();
         this.price = data.price();
         this.title = data.title();
-        this.description = data.description();
         this.author = data.author();
     }
 }
