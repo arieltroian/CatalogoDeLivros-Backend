@@ -32,4 +32,20 @@ public class BookController {
         List<BookResponseDTO> bookList = repository.findAll().stream().map(BookResponseDTO::new).toList();
         return bookList;
     }
+
+    @CrossOrigin(origins = "*", allowedHeaders = "*")
+    @PutMapping("/{id}")
+    public void updateBook(@PathVariable Long id, @RequestBody BookRequestDTO data){
+        Book bookData = repository.findById(id).orElseThrow(() -> new RuntimeException("Book not found"));
+        bookData.updateFromDTO(data);
+        repository.save(bookData);
+        return;
+    }
+
+    @CrossOrigin(origins = "*", allowedHeaders = "*")
+    @DeleteMapping("/{id}")
+    public void deleteBook(@PathVariable Long id){
+        repository.deleteById(id);
+        return;
+    }
 }
