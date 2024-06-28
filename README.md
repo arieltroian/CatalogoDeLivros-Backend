@@ -1,5 +1,7 @@
 # Back End do Catálogo de livros 
 
-Projeto desenvolvido em: Java, Spring Boot e PostgreSQL.
+Desenvolvido com: Java, Spring e PostgreSQL.
+###
+Confira o repositório Front End do projeto: [arieltroian/CatalogoDeLivros-Frontend](https://github.com/arieltroian/CatalogoDeLivros-Frontend)
 
-🚧 Em andamento 🚧
+🚧 Em construção 🚧
