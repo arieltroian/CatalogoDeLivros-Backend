@@ -8,6 +8,6 @@ public class CatalogoDeLivrosApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(CatalogoDeLivrosApplication.class, args);
-	}
+	} 
 
 }
